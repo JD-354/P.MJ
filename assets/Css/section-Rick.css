@@ -1,0 +1,113 @@
+/* Estilo para el encabezado */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #20c997; /* Azul aguamarina */
+    color: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agrega sombra para mayor claridad */
+}
+
+.header h1, .header h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.header .container a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 10px 0;
+    display: inline-block;
+    font-size: 1.1rem;
+}
+
+.header .container a:hover {
+    text-decoration: underline;
+    color: #17a2b8; /* Color azul claro para el hover */
+}
+
+/* Estilo para la paginación */
+.pagination {
+    justify-content: center; /* Alinea la paginación en el centro */
+    margin-top: 10px;
+}
+
+.dataAlbum {
+    margin-top: 254px;
+}
+
+/* Estilo para los botones */
+.btn {
+    font-size: 1rem; /* Asegura que el texto en los botones sea visible */
+    color: white;
+    background-color: #20c997; /* Verde aguamarina */
+    border: none; /* Elimina el borde por defecto */
+    border-radius: 4px; /* Bordes redondeados */
+    padding: 8px 16px; /* Añade algo de espacio en los botones */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Añadir transición suave */
+}
+
+.btn:hover {
+    background-color: #17a2b8; /* Azul aguamarina más claro */
+    transform: translateY(-2px); /* Efecto de elevación al pasar el cursor */
+}
+
+/* Estilos para las tarjetas */
+.card {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Blanco para el fondo de la tarjeta */
+    border-radius: 8px; /* Bordes redondeados en las tarjetas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.2s ease; /* Transición suave al pasar el ratón */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Efecto de elevación al pasar el cursor */
+}
+
+.card img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho de la tarjeta */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-top-left-radius: 8px; /* Bordes redondeados en la parte superior */
+    border-top-right-radius: 8px; /* Bordes redondeados en la parte superior */
+}
+
+.card-body {
+    padding: 15px; /* Relleno dentro del cuerpo de la tarjeta */
+}
+
+.card-title {
+    color: #17a2b8; /* Azul aguamarina para el título de la tarjeta */
+    font-size: 1.25rem; /* Tamaño de fuente para el título */
+}
+
+/* Estilo para los encabezados dentro de la tarjeta */
+.card-body h5 {
+    color: #20c997; /* Verde aguamarina */
+}
+
+.col {
+    padding: 10px; /* Añade algo de espacio entre las columnas */
+}
+/* Quita estilos de enlace dentro del botón */
+#backToTop a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Cambia el color del botón al pasar el ratón */
+  #backToTop:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+  }

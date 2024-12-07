@@ -1,0 +1,99 @@
+body {
+    background: linear-gradient(to bottom, #00bfae, #3b84f3, #6a2e8c);
+    font-family: 'Arial', sans-serif;
+    color: white;
+  }
+  
+  .header {
+    background-color: rgba(0, 153, 255, 0.9);
+    color: white;
+    padding: 30px 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+  }
+  
+  .header h1 {
+    font-size: 3rem;
+  }
+  
+  .header h2 {
+    font-size: 1.5rem;
+  }
+  
+  .anime-card {
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+    border: 2px solid #4ca3dd;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .anime-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .anime-image {
+    max-height: 200px;
+    object-fit: contain;
+    background: linear-gradient(to bottom, #6a2e8c, #00bfae);
+    padding: 10px;
+  }
+  
+  .card-body {
+    background: linear-gradient(to bottom right, #3b84f3, #00bfae);
+    padding: 20px;
+  }
+  
+  .pagination {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .pagination .page-item .page-link {
+    color: #ff8c00;
+    background-color: #6a2e8c;
+    border: none;
+  }
+  
+  .pagination .page-item .page-link:hover {
+    background-color: #4ca3dd;
+    color: white;
+  }
+  
+  .pagination .page-item.active .page-link {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+  }
+  
+  .search-bar {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+
+/* Quita estilos de enlace dentro del botón */
+#backToTop a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Cambia el color del botón al pasar el ratón */
+#backToTop:hover {
+  background-color: #0056b3; /* Azul más oscuro */
+}
+
+#backToLeft {
+  position: fixed;      /* Hace que el botón esté fijo en pantalla */
+  bottom: wil-200;         /* A 20px de la parte inferior */
+  left: 20px;           /* A 20px del lado izquierdo */
+  background-color: #007bff; /* Azul */
+  color: white;         /* Texto en blanco */
+  padding: 10px 15px;   /* Espaciado interno */
+  border: none;         /* Sin bordes */
+  border-radius: 5px;   /* Bordes redondeados */
+  cursor: pointer;      /* Cursor de mano */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra */
+}

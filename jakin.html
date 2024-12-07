@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="./assets/Css/style.jakin.css" />
+  <title>Anime Explorer</title>
+</head>
+<body>
+  <button id="backToTop">
+                <a href="./inicio.html">Volver al Inicio</a>
+            </button>
+  <div class="header text-center mb-4">
+    <div class="container">
+      <h1>Jikan JD</h1>
+      <h2>Descubre el Mundo del Anime</h2>
+    </div>
+  </div>
+
+  <!-- Barra de búsqueda -->
+  <div class="container search-bar">
+    <div class="d-flex">
+      <input
+        type="text"
+        id="searchInput"
+        class="form-control"
+        placeholder="Busca tu anime favorito..."
+      />
+      <button
+        id="searchButton"
+        class="btn btn-primary ms-2"
+        onclick="searchAnime()"
+      >
+        BUSCAR
+      </button>
+    </div>
+  </div>
+
+  <!-- Contenedor de resultados -->
+  <div class="container">
+    <div id="animeContainer" class="row row-cols-1 row-cols-md-4 g-4"></div>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="./assets/js/Jikan.api.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./assets/Css/section-Rick.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200&display=swap"
+            rel="stylesheet"
+        />
+    <title>API - Rick and Morty</title> <!-- Header -->
+    <div class="header">
+        <button id="backToTop">
+            <a href="./inicio.html">Volver al Inicio</a>
+        </button>
+        <header class="text-center">
+            <h1>Rick and Morty API by JD</h1>
+            <h2> Descubre el Mundo de Rick and Morty</h2>
+            <ul id="pagination" class="pagination"></ul>
+        </header>
+    </div>
+
+    <!-- Characters -->
+    <div class="container">
+        <div
+            id="dataAlbum"
+            class="dataAlbum row row-cols-1 row-cols-md-5 g-4"
+        ></div>
+    </div>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/rickAndMortyApi.js"></script>
+</body>
+</html>
